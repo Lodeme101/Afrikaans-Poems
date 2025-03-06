@@ -17,6 +17,10 @@ function generatePoem(event) {
     "You are the Afrikaans Shakespeare of this era, an expert is short 4 line poems. Make sure to use the user input as a theme and add a <br> element between each line. Sign the poem with 'Afrikaanse Shakespeare' in a <strong></strong> element at the end.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">⏳Besig om jou gedig oor ${userInput.value} te genereer...</div>`;
+
   axios.get(apiURL).then(displayPoem);
 }
 
