@@ -7,31 +7,34 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Die nuwe AI gedig generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Die nuwe AI gedig generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Kies'n tema vir jou gedig"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>Die gedig sal hier verskyn <br /></div>
-    </main>
-    <footer>
-      Hierdie AI webblad is deur
-      <a href="https://github.com/Lodeme101">Lodeme Pendergraph</a> geskep en
-      word deur
-      <a href="https://github.com/Lodeme101/Afrikaans-Poems">GitHub</a> en
-      <a href="https://ai-afrikaanse-gedigte.netlify.app/">Netlify</a>
-      beskikbaar gemaak.
-    </footer>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Kies'n tema vir jou gedig"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">Die gedig sal hier verskyn <br /></div>
+      </main>
+      <footer>
+        Hierdie AI webblad is deur
+        <a href="https://github.com/Lodeme101">Lodeme Pendergraph</a> geskep en
+        word deur
+        <a href="https://github.com/Lodeme101/Afrikaans-Poems">GitHub</a> en
+        <a href="https://ai-afrikaanse-gedigte.netlify.app/">Netlify</a>
+        beskikbaar gemaak.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
